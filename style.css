@@ -1,0 +1,50 @@
+body{
+    background: linear-gradient(to right, blue, green);
+}
+
+.body{
+    display: grid;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(5, 100px) minmax(120px, auto);
+}
+
+.buttonstyle{
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.acbutton{
+    grid-column: span 2;
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 25px;
+ }
+ 
+.resultscreen{
+    grid-column: 1 / -1;
+    background-color: black;
+    margin: 5px;
+    padding: 10px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.currentscreen{
+    color: white;
+}
+
+.previousscreen{
+    color: grey;
+}
+
